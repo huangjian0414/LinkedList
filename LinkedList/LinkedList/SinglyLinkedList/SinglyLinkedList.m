@@ -150,6 +150,71 @@
     }
 }
 
+//根据key获取node
+-(SinglyLinkedListNode *)getNodeForKey:(NSString *)key
+{
+    if (!key) {
+        return nil;
+    }
+    SinglyLinkedListNode *node=[self.nodeDict objectForKey:key];
+    
+    return node;
+}
+
+//获取头节点
+-(SinglyLinkedListNode *)getHeadNode
+{
+    
+    return _headNode;
+}
+//获取长度
+-(NSInteger)getLength
+{
+    SinglyLinkedListNode *no = _headNode;
+    NSInteger count=_headNode?1:0;
+    while (no) {
+        if (no.nextNode) {
+            no=no.nextNode;
+            count++;
+        }else
+        {
+            no=nil;
+        }
+    }
+    return count;
+}
+-(BOOL)isEmpty
+{
+    return _headNode==nil;
+}
+
+//反转
+- (void)reverse
+{
+    SinglyLinkedListNode *prev = nil;
+    SinglyLinkedListNode *current = _headNode;
+    SinglyLinkedListNode *next = nil;
+    
+    while (current) {
+        next = current.nextNode;
+        current.nextNode = prev;
+        prev = current;
+        current = next;
+    }
+    _headNode = prev;
+}
+
+//读取所有的节点
+- (void)readAllNode
+{
+    SinglyLinkedListNode *node = _headNode;
+    while (node) {
+        NSLog(@"-- key -- %@, value -- %@", node.key, node.value);
+        node = node.nextNode;
+    }
+    NSLog(@"\r\n================================================================================\r\n");
+}
+
 //获取某节点的前一个节点
 -(SinglyLinkedListNode *)getNodeBeforeNode:(SinglyLinkedListNode*)node
 {

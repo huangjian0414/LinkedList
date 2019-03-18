@@ -36,6 +36,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 //删除某个节点
 -(void)removeNode:(SinglyLinkedListNode *)node;
+
+//根据key获取node
+-(SinglyLinkedListNode *)getNodeForKey:(NSString *)key;
+
+//获取头节点
+-(SinglyLinkedListNode *)getHeadNode;
+
+//获取尾节点
+-(SinglyLinkedListNode *)getLastNode;
+
+//获取长度
+-(NSInteger)getLength;
+
+//是否为空
+-(BOOL)isEmpty;
+
+//反转
+- (void)reverse;
+
+//读取所有的节点
+- (void)readAllNode;
 @end
 
 NS_ASSUME_NONNULL_END
