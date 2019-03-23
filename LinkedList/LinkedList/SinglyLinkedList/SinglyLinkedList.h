@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SinglyLinkedListNode : NSObject<NSCopying>
 @property (nonatomic,copy)NSString *key;
 @property (nonatomic,copy)NSString *value;
-@property(nonatomic,strong)SinglyLinkedListNode *nextNode;
+@property(nonatomic,strong,nullable)SinglyLinkedListNode *nextNode;
 
 +(SinglyLinkedListNode *)nodeWithKey:(NSString *)key value:(NSString *)value;
 @end

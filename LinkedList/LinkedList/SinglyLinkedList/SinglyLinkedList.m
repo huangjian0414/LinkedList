@@ -191,17 +191,17 @@
 //反转
 - (void)reverse
 {
-    SinglyLinkedListNode *prev = nil;
-    SinglyLinkedListNode *current = _headNode;
-    SinglyLinkedListNode *next = nil;
-    
+    //例如链表 1--2--3--4--5  注释模拟第一遍递归
+    //head 1--2--3--4--5
+    SinglyLinkedListNode *current = _headNode.nextNode;//current 2--3--4--5
+    SinglyLinkedListNode *next = nil;//存储当前节点下一个节点
+    _headNode.nextNode=nil;//head 1
     while (current) {
-        next = current.nextNode;
-        current.nextNode = prev;
-        prev = current;
-        current = next;
+        next=current.nextNode;//next 3--4--5
+        current.nextNode=_headNode;//current 2--1
+        _headNode=current;//head 2--1
+        current=next;//current 3--4--5  continue
     }
-    _headNode = prev;
 }
 
 //读取所有的节点
