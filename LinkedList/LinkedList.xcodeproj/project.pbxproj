@@ -14,6 +14,7 @@
 		7EAE16262239ECCE00F4B36B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EAE16242239ECCE00F4B36B /* LaunchScreen.storyboard */; };
 		7EAE16292239ECCE00F4B36B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAE16282239ECCE00F4B36B /* main.m */; };
 		7EAE16332239F14800F4B36B /* SinglyLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAE16322239F14800F4B36B /* SinglyLinkedList.m */; };
+		7EBFB2D8224A0EF00064AB05 /* DoubyLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBFB2D7224A0EF00064AB05 /* DoubyLinkedList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		7EAE16282239ECCE00F4B36B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EAE16312239F14800F4B36B /* SinglyLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinglyLinkedList.h; sourceTree = "<group>"; };
 		7EAE16322239F14800F4B36B /* SinglyLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinglyLinkedList.m; sourceTree = "<group>"; };
+		7EBFB2D6224A0EF00064AB05 /* DoubyLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubyLinkedList.h; sourceTree = "<group>"; };
+		7EBFB2D7224A0EF00064AB05 /* DoubyLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubyLinkedList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 		7EAE16302239ED0A00F4B36B /* DoublyLinkedList */ = {
 			isa = PBXGroup;
 			children = (
+				7EBFB2D6224A0EF00064AB05 /* DoubyLinkedList.h */,
+				7EBFB2D7224A0EF00064AB05 /* DoubyLinkedList.m */,
 			);
 			path = DoublyLinkedList;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			files = (
 				7EAE161E2239ECCD00F4B36B /* ViewController.m in Sources */,
 				7EAE16292239ECCE00F4B36B /* main.m in Sources */,
+				7EBFB2D8224A0EF00064AB05 /* DoubyLinkedList.m in Sources */,
 				7EAE16332239F14800F4B36B /* SinglyLinkedList.m in Sources */,
 				7EAE161B2239ECCD00F4B36B /* AppDelegate.m in Sources */,
 			);
